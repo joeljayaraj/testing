@@ -1,0 +1,40 @@
+'''
+Create a menu driven program to calculate the area of         
+             The following shapes based on user’s choice:
+a.	RECTANGLE
+b. SQUARE
+c. TRIANGLE
+d. PARALLELOGRAM
+e. CIRCLE
+'''
+i='y'
+while i=='y':
+    a=int(input("1. RECTANGLE\n2. SQUARE\n3. TRIANGLE\n4. PARALLELOGRAM\n5. CIRCLE"))
+
+
+    if a==1:
+        l=int(input("enter length of rectangle"))
+        b=int(input("enter breath of rectangle"))
+        print("area of rectangle is: ",l*b)
+    elif a==2:
+     l=int(input("enter length of square"))
+     print("area of square is: ",l*l)
+    elif a==3:
+       l=int(input("enter length of triangle"))
+       b=int(input("enter breath of triangle"))
+       print("area of triangle is: ",0.5*l*b)
+    elif a==4:
+      b=int(input("enter breath of parallelogram"))
+      h=int(input("enter height of parallelogram"))
+      print("area of parallelogram is: ",h*b)
+    elif a==5:
+      a=int(input("enter radius of circle"))
+      print("area of circle is: ",3.14*a*a)
+    else:
+        print("invalid")
+    i=input("Would u like to continue?(y/n)")
+    if i!='y':
+        print('Thankyou')
+        break
+
+
